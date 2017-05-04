@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="province_picker_item_horizontal_space">5dp</dimen>
+    <dimen name="province_picker_item_vertical_space">10dp</dimen>
+    <dimen name="province_picker_item_space">5dp</dimen>
+    <dimen name="province_picker_item_radius">5dp</dimen>
+
+    <dimen name="province_picker_item_abbr_text_size">16sp</dimen>
+    <dimen name="province_picker_item_name_text_size">11sp</dimen>
+
+    <dimen name="province_picker_item_abbr_text_padding_left">5sp</dimen>
+    <dimen name="province_picker_item_name_text_padding_left">2sp</dimen>
+</resources>
