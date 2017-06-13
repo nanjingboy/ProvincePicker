@@ -2,7 +2,9 @@ package me.tom.province.picker;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.Point;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -102,9 +104,9 @@ public class ProvincePicker {
         mRecyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
         mRecyclerView.addItemDecoration(new GridSpacingItemDecoration(6, horizontalSpace, verticalSpace));
 
-        mAlertDialog = new AlertDialog.Builder(context, R.style.ProvincePicker).create();
-        mAlertDialog.getWindow().setGravity(Gravity.BOTTOM);
-        mAlertDialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        mAlertDialog = new AlertDialog.Builder(context).create();
+        mAlertDialog.getWindow().setGravity(Gravity.BOTTOM | Gravity.FILL_HORIZONTAL);
+        mAlertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         mAlertDialog.setCancelable(true);
         mAlertDialog.setCanceledOnTouchOutside(true);
         mAlertDialog.setView(view);
